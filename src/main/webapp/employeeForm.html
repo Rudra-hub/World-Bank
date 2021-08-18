@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Add Product</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link type="text/css" rel="stylesheet" href="css/Styles.css">
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script>
+	function validate() {
+		
+		var employeeName = document.getElementById("employeeName").value;
+		var errorEmployeeName = document.getElementById("errorEmployeeName");
+		var employeePassword = document.getElementById("employeePassword").value;
+		var errorPassword = document.getElementById("errorPassword");
+		var confirmpassword = document.getElementById("confirmpassword").value;
+		var errorConfirmpassword = document.getElementById("errorConfirmpassword");
+		var errorAge = document.getElementById("errorAge");
+		var branch = document.getElementById("branch").value;
+		var errorBranch = document.getElementById("errorBranch");
+		var mobileNumber = document.getElementById("mobileNumber").value;
+		var errorMobileNumber = document.getElementById("errorMobileNumber");
+		var email = document.getElementById("email").value;
+		var errorEmail = document.getElementById("errorEmail");
+
+		 if (employeeName.length == 0) {
+			errorEmployeeName.innerHTML = "Please enter a Employee Name";
+			return false;
+		} else if (employeePassword.length == 0) {
+			errorPassword.innerHTML = "Please enter a Password";
+			return false;
+		} else if (confirmpassword.length == 0) {
+			errorConfirmpassword.innerHTML = "Please Confirm a Password";
+			return false;
+		}else if (employeePassword !== confirmpassword) {
+			errorPassword.innerHTML = "Please enter a Same Password";
+			errorConfirmpassword.innerHTML = "Please enter a Same Password";
+			return false;
+	    }
+		else if (branch.length == 0) {
+			errorBranch.innerHTML = "Please enter Branch";
+			return false;
+		} else if (mobileNumber.length == 0) {
+			errorMobileNumber.innerHTML = "Please enter a Mobile Number";
+			return false;
+		} else if (email.length == 0) {
+			errorEmail.innerHTML = "Please enter Email";
+			return false;
+		} else {
+			alert("Welcome " + customerName);
+		}
+	}
+</script>
+</head>
+
+<body bgcolor="grey">
+	<h1>
+		<marquee>
+
+			<p style="color: #1f6feb;">
+				<b>Welcome to the World Bank</b>
+			</p>
+
+		</marquee>
+	</h1>
+	<form action="EmployeeController" onsubmit="return validate()">
+		<center>
+			<fieldset>
+				<div class="Card text-white bg-dark" style="max-width: 30rem;">
+					<div class="card-body"><br>
+						<h2>Customer Registration Form</h2><br>
+						Employee Name :
+						<div id="errorEmployeeName" style="color: red"></div>
+						<input type="text" class="form-control mb-2 mr-sm-2"
+							name="employeeName" id="employeeName"> 
+						Password :
+						<div id="errorPassword" style="color: red"></div>
+						<input type="text" class="form-control mb-2 mr-sm-2"
+							name="employeePassword" id="employeePassword"> 
+							Confirm Password :
+						<div id="errorConfirmpassword" style="color: red"></div>
+						<input type="text" class="form-control mb-2 mr-sm-2"
+							name="confirmpassword" id="confirmpassword"> 
+						Branch :
+						<div id="errorBranch" style="color: red"></div>
+						<input type="text" class="form-control mb-2 mr-sm-2"
+							name="branch" id="branch"> 
+						Mobile Number :
+						<div id="errorMobileNumber" style="color: red"></div>
+						<input type="number" class="form-control mb-2 mr-sm-4"
+							name="mobileNumber" id="mobileNumber">
+						Email :
+						<div id="errorEmail" style="color: red"></div>
+						<input type="email" class="form-control mb-2 mr-sm-2"
+							name="email" id="email"> 
+
+						<button type="submit" class="btn btn-danger mb-2">Submit</button>
+						<button type="reset" class="btn btn-warning mb-2">Clear</button>
+					</div>
+				</div>
+			</fieldset>
+		</center>
+	</form>
+	<button type="button" class="btn btn-dark ">
+		<a href="Home.html">Home</a>
+	</button>
+</body>
+
+</html>
