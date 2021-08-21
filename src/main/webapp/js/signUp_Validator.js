@@ -1,3 +1,6 @@
+        // Sample Sign up form created //
+
+
 function validator(){
     var allFields = new Array();
     var userName = document.forms["SignupForm"]["userName"];
