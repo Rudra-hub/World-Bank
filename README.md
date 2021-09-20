@@ -18,16 +18,25 @@ Employee and Customer can perform all required functionality for the project
 Logging and Exception handling is also working To-do list:
 JUnit Testing for each function
 currently only one benifits coordinator is supported
+## Getting Started
+Start with this Github Repository
+Git clone to directory of your choice $ git clone https://github.com/kafilurrahman/BANKING_OPERATIONS_UI_APP.git
+Run the project on server
+
+## Features
+List of features ready and TODOs for future development
+
+Employee and Customer can Register by entering valid details and can also Login once Registerd
+Employee and Customer can perform all required functionality for the project
+Logging and Exception handling is also working
+To-do list:
+
+JUnit Testing for each function
+currently only one benifits coordinator is supported
 Getting Started
 Start with this Github Repository
 Git clone to directory of your choice $ git clone https://github.com/kafilurrahman/BANKING_OPERATIONS_UI_APP.git
 Run the project on server
-## -git clone git remote add origin https://github.com/ketan7705/World-Bank.git
-## -open with Eclipse IDE
-## -Connect with Tomcat Server
-## -Set Build Path JDK 1.8
-## -Run Server
-
 
 
 
