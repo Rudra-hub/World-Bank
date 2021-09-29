@@ -23,7 +23,7 @@ JUnit Testing for each function
 currently only one benifits coordinator is supported
 ## Getting Started
 * Start with this Github Repository
-* Git clone to directory of your choice $ git clone https://github.com/ketan7705/World-Bank.git
+* Git clone to directory of your choice $ git clone https://github.com/Pritam765/World-Bank.git
 * Run the project on server
 
 
